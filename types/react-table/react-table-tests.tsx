@@ -375,6 +375,7 @@ function Table({ columns, data, updateMyData, skipPageReset = false }: Table<Dat
             filterTypes,
             // nestExpandedRows: true,
             initialState: { pageIndex: 2 },
+            autoResetHiddenColumns: false,
             // updateMyData isn't part of the API, but
             // anything we put into these options will
             // automatically be available on the instance.

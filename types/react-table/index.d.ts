@@ -169,6 +169,7 @@ export type UseTableOptions<D extends object> = {
     data: D[];
 } & Partial<{
     initialState: Partial<TableState<D>>;
+    autoResetHiddenColumns: boolean;
     stateReducer: (newState: TableState<D>, action: ActionType, previousState: TableState<D>, instance?: TableInstance<D>) => TableState<D>;
     useControlledState: (state: TableState<D>, meta: Meta<D>) => TableState<D>;
     defaultColumn: Partial<Column<D>>;
